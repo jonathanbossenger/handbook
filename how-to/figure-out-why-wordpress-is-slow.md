@@ -2,6 +2,14 @@
 
 `wp profile` is a WP-CLI command to help you quickly identify what's slow with WordPress. It's designed to work alongside Xdebug and New Relic because it's easy to deploy to any server that has WP-CLI. With `wp profile`, you gain quick visibility into key performance metrics (execution time, query count, cache hit/miss ratio, etc.) to guide further debugging.
 
+## Installation
+
+First, install the `wp profile` package if you haven't already:
+
+```
+$ wp package install wp-cli/profile-command
+```
+
 ### Step 1 - Profile the WordPress load process
 
 Dealing with a slow WordPress install you've never worked with before? Run `wp profile stage` to see metrics for each stage of the WordPress load process. Include the `--url=<url>` argument to mock the request as a specific URL.
