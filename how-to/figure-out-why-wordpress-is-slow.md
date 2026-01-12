@@ -46,7 +46,7 @@ $ wp profile stage bootstrap --url=runcommand.io --spotlight
 +--------------------------+----------------+---------+------------+-------------+-------------+------------+--------------+--------------+---------------+
 ```
 
-Each stage is further segmented by `wp profile` based on its primary actions. For the bootstrap stage, the primary actions include 'muplugins_loaded', 'plugins_loaded', and 'init'. You can also see some intermediate actions like 'plugins_loaded:before' and 'wp_loaded:after'. These intermediate actions correspond to script execution before (or after) actual WordPress hooks. They're pseudo hooks in a sense.
+Each stage is further segmented by `wp profile` based on its primary actions. For the bootstrap stage, the primary actions include `muplugins_loaded`, `plugins_loaded`, and `init`. You can also see some intermediate actions like `plugins_loaded:before` and `wp_loaded:after`. These intermediate actions correspond to script execution before (or after) actual WordPress hooks. They're pseudo hooks in a sense.
 
 ### Step 3 - Profile specific hooks
 
