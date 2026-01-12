@@ -1,7 +1,5 @@
 # Figure out why WordPress is slow
 
-With `wp profile`, you gain quick visibility into key performance metrics (execution time, query count, cache hit/miss ratio, etc.) to guide further debugging.
-
 `wp profile` is a WP-CLI command to help you quickly identify what's slow with WordPress. It's designed to work alongside Xdebug and New Relic because it's easy to deploy to any server that has WP-CLI. With `wp profile`, you gain quick visibility into key performance metrics (execution time, query count, cache hit/miss ratio, etc.) to guide further debugging.
 
 ### Step 1 - Profile the WordPress load process
@@ -78,6 +76,6 @@ $ wp profile hook plugins_loaded --url=runcommand.io --fields=callback,time,loca
 +------------------------------------------------------------+---------+-----------------------------------------------------------------+
 ```
 
-Et voila! We've discovered that `wpseo_init()` and `Jetpack::load_modules()` are collectively contributing ~100ms to every page load.
+There you have it! We've discovered that `wpseo_init()` and `Jetpack::load_modules()` are collectively contributing ~100ms to every page load.
 
 With `wp profile`, discovering why WordPress is slow becomes the easy part.
