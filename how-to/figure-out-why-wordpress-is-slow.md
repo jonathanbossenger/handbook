@@ -21,7 +21,7 @@ $ wp profile stage --url=runcommand.io
 
 When WordPress handles a request from a browser, it's essentially executing as one long PHP script. `wp profile stage` breaks the script into three stages:
 
-* **bootstrap** is where WordPress is setting itself up, loading plugins and the main theme, and firing the init hook.
+* **bootstrap** is where WordPress is setting itself up, loading plugins and the main theme, and firing the `init` hook.
 * **main_query** is how WordPress transforms the request (e.g. /2016/10/21/moms-birthday/) into the primary WP_Query.
 * **template** is where WordPress determines which theme template to render based on the main query, and renders it.
 
