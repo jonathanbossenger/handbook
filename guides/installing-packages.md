@@ -2,6 +2,8 @@
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can contain WP-CLI commands, but they can also just extend WP-CLI in some way.
 
+To finx existing packages to install, take a look at [Packagist](https://packagist.org/?type=wp-cli-package).
+
 ## Installing a Package
 
 Use the `wp package install` command to install a package. Packages can be specified as:
@@ -25,7 +27,7 @@ wp package install /path/to/package
 wp package install package.zip
 ```
 
-Packages are installed to `~/.wp-cli/packages/` by default. Use the `WP_CLI_PACKAGES_DIR` environment variable to provide a custom path.
+Packages are installed to `~/.wp-cli/packages/` by default. Use the `WP_CLI_PACKAGES_DIR` environment variable to provide a custom path. See also: [Sharing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/sharing-wp-cli-packages/).
 
 ## Version Constraints
 
