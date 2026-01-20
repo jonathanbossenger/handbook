@@ -6,33 +6,11 @@ WP-CLI is licensed under the [MIT license](https://github.com/wp-cli/wp-cli/blob
 
 All code accepted into repositories under the official [WP-CLI GitHub organization](https://github.com/wp-cli) must be compatible with the MIT license. This ensures that WP-CLI can remain freely usable, modifiable, and distributable by anyone.
 
-### Compatible licenses
-
-The following licenses are compatible with MIT and are acceptable for contributions:
-
-* **MIT License** - Preferred, as it matches WP-CLI's license
-* **BSD licenses** (2-Clause, 3-Clause) - Compatible permissive licenses
-* **Apache License 2.0** - Compatible permissive license
-* **ISC License** - Compatible permissive license
-* **Public Domain / CC0** - No restrictions on use
-* **WTFPL** - Permissive "do what you want" license
-
-### Incompatible licenses
-
-The following license types are **not** compatible with MIT and cannot be accepted:
-
-* **Strict GPL licenses** (GPL v2-only, GPL v3-only without "or later" clause) - These licenses require derivative works to also be under GPL, which conflicts with MIT's permissive nature. Note that "GPL v2 or later" and "GPL v3 or later" may have different compatibility considerations.
-* **Copyleft licenses without permissive exceptions** - Licenses that require derivative works to use the same license
-* **Proprietary licenses** - Code that restricts modification or redistribution
-* **Non-commercial licenses** - Any license that restricts commercial use
-
-**Important**: While MIT-licensed code *can* be included in GPL projects (like WordPress plugins), GPL code *cannot* be included in MIT-licensed projects like WP-CLI. The compatibility is one-way.
-
 ## Bundling third-party code
 
 When bundling third-party code directly into a WP-CLI package (i.e., copying code into the repository rather than declaring it as a dependency), the code must:
 
-1. **Be licensed under an MIT-compatible license** - See the compatible licenses list above
+1. **Be licensed under an MIT-compatible license**
 2. **Include the original license file or header** - The third-party code's license terms must be preserved
 3. **Maintain copyright notices** - Original copyright notices must remain intact
 4. **Be clearly identified** - It should be clear which code is third-party and where it came from
