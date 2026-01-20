@@ -112,7 +112,9 @@ See the [Behat Steps reference](https://make.wordpress.org/cli/handbook/referenc
 
 #### Setting Up Your Test Environment
 
-Before running tests, you need to set up a test database. You have two options:
+Before running tests, you need to set up a test database. The `composer behat` script will automatically detect database availability and fall back to SQLite if there is no running database, making it easy to get started without any setup.
+
+You have two options:
 
 **Option 1: SQLite (Recommended for simplicity)**
 
@@ -121,6 +123,8 @@ The easiest way to run tests is with SQLite, which requires no database setup:
 ```bash
 WP_CLI_TEST_DBTYPE=sqlite composer behat
 ```
+
+Or simply run `composer behat` and let it automatically use SQLite if no database is configured.
 
 **Option 2: MySQL/MariaDB**
 
