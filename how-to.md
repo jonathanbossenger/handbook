@@ -12,3 +12,5 @@ tasks.
 - [How-to start the webserver](https://make.wordpress.org/cli/handbook/)
 
 - [How to create a custom plugin](https://make.wordpress.org/cli/handbook/how-to-create-custom-plugins)
+
+- [Figure out why WordPress is slow](https://make.wordpress.org/cli/handbook/figure-out-why-wordpress-is-slow)

@@ -341,6 +341,12 @@
         "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to\/how-to-start-webserver.md",
         "parent": "how-to"
     },
+    "figure-out-why-wordpress-is-slow": {
+        "title": "Figure out why WordPress is slow",
+        "slug": "figure-out-why-wordpress-is-slow",
+        "markdown_source": "https:\/\/github.com\/wp-cli\/handbook\/blob\/main\/how-to\/figure-out-why-wordpress-is-slow.md",
+        "parent": "how-to"
+    },
     "identify-plugin-theme-conflict": {
         "title": "Identify a Plugin or Theme Conflict",
         "slug": "identify-plugin-theme-conflict",
