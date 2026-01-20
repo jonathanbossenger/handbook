@@ -2,7 +2,7 @@
 
 WP-CLI packages are community-maintained projects built on WP-CLI. They can contain WP-CLI commands, but they can also just extend WP-CLI in some way.
 
-To finx existing packages to install, take a look at [Packagist](https://packagist.org/?type=wp-cli-package).
+To find existing packages to install, take a look at [Packagist](https://packagist.org/?type=wp-cli-package).
 
 ## Installing a Package
 
