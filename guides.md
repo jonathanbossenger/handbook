@@ -8,6 +8,6 @@
 * **[External resources](https://make.wordpress.org/cli/handbook/guides/external-resources/)** - Blog posts, slides and videos from users.
 * **[Force output to a specific locale](https://make.wordpress.org/cli/handbook/guides/force-output-specific-locale/)** - Localisation issue
 * **[Identify a Plugin or Theme Conflict](https://make.wordpress.org/cli/handbook/guides/identify-plugin-theme-conflict/)** - Debugging advise
-* **[Package Version Constraints](https://make.wordpress.org/cli/handbook/guides/package-version-constraints/)** - Learn about version constraint syntax for packages
+* **[Installing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/installing-packages/)** - Learn how to install packages and use version constraints
 * **[Sharing WP-CLI Packages](https://make.wordpress.org/cli/handbook/guides/sharing-wp-cli-packages/)** - Some words about your environment
 * **[Troubleshooting Guide](https://make.wordpress.org/cli/handbook/guides/troubleshooting/)** - Some help to troubleshoot
