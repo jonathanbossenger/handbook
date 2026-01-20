@@ -32,13 +32,6 @@ Before adding a new dependency:
 2. Verify that all of the dependency's own dependencies are also compatible
 3. Use `composer show -t` to view the dependency tree with license information, or install additional tools like `composer/satis` to run `composer licenses` for detailed license auditing
 
-### Dependency license best practices
-
-* **Prefer MIT or other permissive licenses** - These have the fewest restrictions
-* **Document major dependencies** - Note any dependencies with licenses other than MIT in your package's README
-* **Stay up-to-date** - Dependency licenses can change between versions, so review licenses when updating dependencies
-* **When in doubt, ask** - Reach out to [WP-CLI maintainers](https://github.com/orgs/wp-cli/teams/maintainers) if you're unsure about a license
-
 ## Why these requirements?
 
 These licensing requirements ensure that:
