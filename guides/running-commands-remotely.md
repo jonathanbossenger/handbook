@@ -131,7 +131,7 @@ wp_users:user_email
 ### Running from Windows Powershell
 
 Windows Powershell has a special meaning for the `@` symbol, meaning it cannot be used without quoting or escaping.
-To run commands remotly, you need to use one of the following notation.
+To run commands remotely, you need to use one of the following notation.
 
 ```sh
 $ wp `@dev core version
