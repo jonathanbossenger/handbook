@@ -17,8 +17,30 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
+      - name: Set up PHP environment
+        uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # v2
+        with:
+          php-version: 'latest'
+        env:
+          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Composer dependencies & cache dependencies
+        uses: ramsey/composer-install@65e4f84970763564f46a70b8a54b90d033b3bdda # v4
+
+      - name: Install WP-CLI
+        run: |
+          curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
+          sudo mv wp-cli-nightly.phar /usr/local/bin/wp
+          sudo chmod +x /usr/local/bin/wp
+
+      - name: Install non-bundled packages
+        run: bash bin/install_packages.sh
+
       - name: Generate handbook
-        run: WP_CLI_PACKAGES_DIR=bin/packages WP_CLI_CONFIG_PATH=/dev/null wp handbook gen-all
+        run: wp handbook gen-all
+        env:
+          WP_CLI_PACKAGES_DIR: bin/packages
+          WP_CLI_CONFIG_PATH: /dev/null
 
       - name: Commit and Create Pull Request
         env:
